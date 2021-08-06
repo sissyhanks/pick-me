@@ -1,8 +1,7 @@
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
-  // Send the rendered Handlebars.js template back as the response
+router.get('/', (req, res) => {
   res.render('home');
 });
 
-module.exports = router;
+module.exports = router
