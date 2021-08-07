@@ -9,10 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret: 'secretsecretsecret',
+  secret: 'Super secret secret',
   resave: false,
   saveUninitialized: true,
-}
+  // cookie: { secure: true }
+};
 
 app.use(session(sess));
 

@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-const session = require('express-session');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+// const session = require('express-session');
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 router.post('/', async (req, res) => {
   try {
